@@ -9,6 +9,7 @@ package pk9;
  * @author Petar
  */
 import java.util.Scanner;
+
 public class PK9 {
 
     /**
@@ -16,23 +17,32 @@ public class PK9 {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int year = sc.nextInt();
-        
-        // TODO code application logic here
+        System.out.println("Bitte gib Tag ein");
+        String wahl = sc.next();
+        if ("Tag".equals(wahl)) {
+            int dayyear;
+            dayyear = year(sc.nextInt());
+            System.out.println(dayyear);
+        } else {
+            
+            boolean year;
+            year = isLeapYear(sc.nextInt());
+            System.out.println("Schaltjahr:"+year);
+    
+        }
     }
-    
-    
-    
- public static boolean isLeapYear(int year) {
+
+    public static boolean isLeapYear(int year) {
 // Gibt true zurueck, wenn year ein Schaltjahr ist,
 // ansonsten false.
-   if(true){
-       return true;}
-   else {return false;}
+        if (true) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
-
-public static int year(int days) {
+    public static int year(int days) {
 // Gibt die aktuelle Jahreszahl zurueck, wenn
 // seit dem 1.1.1980 "days" Tage vergangen sind.
         assert days >= 0;
@@ -51,4 +61,5 @@ public static int year(int days) {
         return year;
     }
 }
+
    
