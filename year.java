@@ -41,6 +41,7 @@ public class PK9 {
         else {
             return false;
         }
+    }
 
     public static int year(int days) {
 // Gibt die aktuelle Jahreszahl zurueck, wenn
@@ -49,7 +50,7 @@ public class PK9 {
         int year = 1980;
         while (days > 365) {
             if (isLeapYear(year)) {
-                if (days > 366) {
+                if (days >= 366) {
                     days -= 366;
                     year += 1;
                 }
