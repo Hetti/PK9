@@ -1,0 +1,19 @@
+1.1 Zusicherung
+
+Year: Vorbedingung: =1980
+
+Nachbedingung/Invariante: >=1980
+
+Days: Vorbed.: >=0
+
+Nachbed/Invariante: >=0
+
+1.2 Termination
+
+Wenn days bei einem Schleifendurchlauf genau 366 wird und year ein Schaltjahr ist, dann durchläuft das Programm die äußere If-Schleife, aber nicht die innere, und da sich in diesem Schleifendurchlauf keine Variablen ändern, passiert das ganze immer wieder von neuem.
+
+Bsp: year(366);
+
+1.3
+
+Bei innerer If-Schleife „>“ zu „>=“ 
