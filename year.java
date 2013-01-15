@@ -35,12 +35,12 @@ public class PK9 {
     public static boolean isLeapYear(int year) {
 // Gibt true zurueck, wenn year ein Schaltjahr ist,
 // ansonsten false.
-        if (true) {
+        if(year%4==0 &&(year%100!=0 || (year%100==0 && year%400==0))){
             return true;
-        } else {
+        }
+        else {
             return false;
         }
-    }
 
     public static int year(int days) {
 // Gibt die aktuelle Jahreszahl zurueck, wenn
